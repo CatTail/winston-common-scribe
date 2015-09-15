@@ -1,0 +1,26 @@
+{
+  "name": "winston-common-scribe",
+  "version": "1.0.0",
+  "description": "Scribe transport for winston",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cattail/winston-common-scribe.git"
+  },
+  "keywords": [
+    "winston",
+    "transport"
+  ],
+  "author": "zhongchiyu@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cattail/winston-common-scribe/issues"
+  },
+  "homepage": "https://github.com/cattail/winston-common-scribe#readme",
+  "dependencies": {
+    "scribe": "0.0.9"
+  }
+}
