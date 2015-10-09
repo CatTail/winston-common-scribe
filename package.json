@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/cattail/winston-common-scribe#readme",
   "dependencies": {
+    "ip": "^1.0.1",
     "scribe": "0.0.9"
   }
 }
