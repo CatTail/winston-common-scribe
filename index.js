@@ -67,6 +67,8 @@ Scribe.LEVELS_MAP = {
  * [error]: optional, in meta, should only appear when level is error
  */
 Scribe.prototype.log = function (level, message, meta, callback) {
+    // remove newline break
+    message = message.replace(/(?:\r\n|\r|\n)+/g, '');
     if (level === 'error' && meta.error instanceof Error) {
         message = message + ': ' + meta.error.message + ' -- ' + meta.error.stack;
     }
