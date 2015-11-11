@@ -98,11 +98,10 @@ Scribe.prototype.formatTimestamp = function(t) {
  * [error]: optional, in meta, should only appear when level is error
  */
 Scribe.prototype.log = function (level, message, meta, callback) {
-    // remove newline break
-    message = message.replace(/(?:\r\n|\r|\n)+/g, '');
     if (level === 'error' && meta.error instanceof Error) {
         message = message + ': ' + meta.error.message + ' -- ' + meta.error.stack;
     }
+    message = encodeURIComponent(message);
     level = Scribe.LEVELS_MAP[level] || this.level;
     var datetime = this.formatTimestamp(new Date());
     var version = this.version;
