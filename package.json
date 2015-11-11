@@ -1,6 +1,6 @@
 {
   "name": "winston-common-scribe",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Scribe transport for winston",
   "main": "index.js",
   "scripts": {
